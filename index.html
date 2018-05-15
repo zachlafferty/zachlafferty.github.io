@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Written By: Zach Lafferty-->
+
+<html lang="en">
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="racing.css">
+    <meta charset="UTF-8">
+    <title>The Flight of the Year</title>
+</head>
+<style>
+    body {
+    
+    /* Sky Background */
+    background-image: url(cis370finalproject/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+    /* end of Sky Background */
+
+    /* Headings */
+    h1 {text-align: center;
+        color: black;
+        background-color: white;
+        border-bottom-style: solid;
+        border-bottom-color: red;
+        border-bottom-width: medium;
+        font-family: cursive;
+        padding-bottom: 0px;
+        margin-top: 0px;}
+    h4 {
+        text-align: center;
+        color: black;
+        background-color: lightcyan;
+        border-style:dotted;
+        border-color: red;
+        font-family: cursive;
+        word-spacing: 10px;
+        padding-top: 0px;
+    /* End of Headings */
+</style>
+<body>
+
+<!--Declare Headings-->
+<h1>The Flight of the Year</h1>
+<h4>Who Do You Think Will Win?</h4>
+
+<!--Marquee Banner-->
+<marquee behavior="scroll" direction ="right" scrollamount="10" bgcolor="white">Will it be the Big Plane or the Small Plane?</marquee>
+
+<!--Big Plane-->
+    <marquee behavior="slide" direction ="right" scrollamount="20" id="bigPlane"><img src="cis370finalproject/fastplane.jpg" width="100" height="80" alt="Big Plane" /></marquee>
+    
+
+<!--Small Plane-->
+    <marquee behavior="slide" direction ="right" scrollamount="18" id="smallPlane"><img src="cis370finalproject/slowplane.jpg" width="100" height="80" alt="Small Plane" /></marquee> 
+    
+<!-- begin Button--> 
+<input type="image" src="cis370finalproject/startbutton.jpg" width="85" height="85" alt="begin race"
+       onClick="document.getElementId('bigPlane').start();"/><br />
+</body>
+<!--<script src="racingscript.js"></script>-->
+</html>
